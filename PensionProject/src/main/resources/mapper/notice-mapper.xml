@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pension.mapper.NoticeMapper">
+	<resultMap type="notice" id="notice">
+		<id column="NOTICE_NO" property="noticeNo"/>
+		<result column="MANAGER_ID" property="noticeWriter"/>
+		<result column="TITLE" property="noticeTitle"/>
+		<result column="WRITE_DATE" property="noticeDate"/>
+		<result column="CONTENT" property="noticeContent"/>
+		<result column="NOTICE_COUNT" property="noticeCount"/>
+	</resultMap>
+	
+	<select id="viewNoticeList" parameterType="hashMap" resultType="hashMap">
+		select * from
+			(select rownum as no, list.notice_no, list.manager_id,list.title,list.write_date,list.notice_count
+			    from (select * from kor_notice 
+			            where title like '%' || #{search} || '%'
+			            order by notice_no asc) list) notice
+		where ceil(notice.no / 5) = #{pageNo}	            
+	</select> 
+	<select id="selectNoticeList" resultType="int">
+		select count(*) from kor_notice
+	</select>
+		<update id="updateNoticeCount" parameterType="int">
+		update kor_notice set notice_count = notice_count + 1 where notice_no = #{noticeNo} 
+	</update>
+	<select id="selectNotice" resultMap="notice" parameterType="int">
+		select notice_no,manager_id,title,write_date,notice_count,content
+			from kor_notice where notice_no = #{notice_no}
+	</select>
+
+</mapper>

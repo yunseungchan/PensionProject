@@ -1,0 +1,180 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+.main_container{
+    width: 1920px;
+    margin: 0 auto;
+}
+/* header */
+#header{
+    width: 200px;
+    margin: 0px auto;
+}
+.header1{
+/*     position: fixed; */
+}
+
+.header_logo img{
+    width: 150px;
+    height: 100%;
+}
+.threeLineImg{
+    position: relative;
+    top: 40px;
+    left: 800px;
+
+}
+.threeLineImg > div{
+    /* position: fixed; */
+}
+.threeLineImg img{
+    width: 40px;
+}
+.kor-pc{
+    width: 1200px;
+    margin:  0 auto;
+}
+#header .container{
+    padding: 0 20px;
+}
+/* section */
+.write_container{
+    width: 1000px;
+    margin: 0 auto;
+    margin-left: 450px;
+    margin-bottom: 20px;
+}
+.write_container > p{
+    margin-left: 50px;
+    font-size: 25px;
+}
+.title_box > p{
+    margin-left: 50px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.txt_name> input{
+    margin-left: 20px;
+    width: 500px;
+    height: 40px;
+    padding-left: 10px;
+}
+.content_box{
+    display: flex;
+    flex-direction: row;
+}
+.content_box > p{
+    width: 70px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+.update_button{
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+}
+/* footer */
+footer{
+    width: 1920px;
+    height: 500px;
+    background-color: #2b2b2b;
+}
+footer h2 img{
+    width: 100px;
+}
+footer > ul{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 265px;
+    /* border: 1px solid black; */
+    list-style-type: none;
+    text-decoration: none;
+}
+footer > ul > li{
+    margin: 100px 70px 0px 70px;
+    float: left;
+
+}
+.center,
+.right{
+    padding-top: 50px;
+}
+.center ul,
+.right ul {
+    list-style-type: none;
+
+}
+.left p{
+    color: white;
+    margin-top: 10px;
+}
+.left > div{
+    padding-top: 10px;
+}
+.center ul a,
+.right ul a{
+    text-decoration: none;
+    color: white;
+}
+.center ul li,
+.right ul li{
+    padding-top: 10px;
+}
+.center > ul{
+    float: left;
+    margin: 0px 80px;
+}
+.right1{
+    background: url('/img/main/main_pension.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    float: left;
+}
+.right2{
+    background: url('/img/main/main_glamping.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    left: 170px;
+}
+
+.right3{
+    background: url('/img/main/main_caravan.png') no-repeat;
+    width: 150px;
+    min-height: 100px;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 20px;
+}
+.right1 a{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-weight: bold;
+}
+.right3 a{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font-weight: bold;
+}
+.right2 a{
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+    font-weight: bold;  
+
+}

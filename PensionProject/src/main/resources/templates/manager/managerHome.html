@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약 관리</title>
+    <link rel="stylesheet" href="../css/managerHome.css">
+    <script src="/lib/jquery-3.6.3.js"></script>
+    <script src="../javaScript/managerHome.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>펜션 예약 관리 페이지</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#">예약 관리</a></li>
+                <li><a href="#">객실 관리</a></li>
+                <li><a href="#">회원 관리</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>예약된 방 목록</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>예약번호</th>
+                    <th>아이디</th>
+                    <th>연락처</th>
+                    <th>체크인</th>
+                    <th>체크아웃</th>
+                    <th>객실</th>
+                    <th>인원</th>
+                    <th>금액</th>
+                    <th>예약날짜</th>
+                    <th>예약 취소</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <td>1</td>
+                    <td>홍길동</td>
+                    <td>010-1111-1111</td>
+                    <td>2023-05-01</td>
+                    <td>2023-05-03</td>
+                    <td>스위트룸</td>
+                    <td>2</td>
+                    <td>200,000원</td>
+                    <td>2023/03/04</td>
+                    <td>
+                        <button type="button" onclick="cancel()">예약 취소</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      
+    </main>
+
+
+</body>
+
+</html>

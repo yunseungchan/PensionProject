@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인</title>
+    <link rel="stylesheet" href="/css/main/main.css">
+</head>
+
+<body>
+    <th:block th:include="/fragments/mainheader.html"></th:block>
+   
+    <div class="main-page_menu" id="mainDiv">
+        <div class="main-page_btn-wrap" id="caravanArea">
+            <div class="caravanHyperLink">
+                <a href="/caravan" class="main-page_btn text-ani">코리아 카라반</a>
+            </div>
+        </div>
+        <div class="main-page_btn-wrap" id="pensionArea">
+            <div class="pensionHeyperLink">
+                <a href="/pension" class="main-page_btn text-ani">코리아 펜션</a>
+            </div>
+        </div>
+        <div class="main-page_btn-wrap" id="glampingArea">
+            <div class="glampingHeyperLink">
+                <a href="/glamping" class="main-page_btn text-ani">코리아 글램핑</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="map_page">
+        <div class="map_img">
+            <img src="/img/main/main_map.png" alt="">
+        </div>
+    </div>
+
+    <th:block th:include="/fragments/footer.html"></th:block>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 관리</title>
+    <link rel="stylesheet" href="../css/managerMember.css">
+    <script src="/lib/jquery-3.6.3.js"></script>
+    <script src="../javaScript/managerMember.js"></script>
+</head>
+
+<body>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>회원 관리</title>
+        <link rel="stylesheet" href="/css/managerMember.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>펜션 회원 관리자 페이지</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">예약 관리</a></li>
+                    <li><a href="#">객실 관리</a></li>
+                    <li><a href="#">회원 관리</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>회원 관리</h1>
+            <form class="form1">
+                <label for="search">이름으로 검색하기</label>
+                <input type="text" id="search" name="search">
+                <button class="searchButton" type="button" onclick="search()">검색</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>이름</th>
+                        <th>이메일</th>
+                        <th>관리</th>
+                    </tr>
+                </thead>
+                <tbody id="members">
+                    <tr>
+                        <td>[[${member.id}]]</td>
+                        <td>[[${member.name}]]</td>
+                        <td>[[${member.email}]]</td>
+                        <td>
+                            <button type="button" onclick="edit(id)">수정</button>
+                            <button type="button" onclick="deleteMember(id)">삭제</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <form id="memberForm" style="display: none;">
+                <label for="id">ID</label><br>
+                <input type="text" id="id" name="id" readonly /><br>
+                <label for="name">이름</label><br>
+                <input type="text" id="name" name="name" required /><br>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" required />
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" required />
+                <button type="button" onclick="save()">저장</button>
+                <button type="button" onclick="cancel()">취소</button>
+            </form>
+        </main>
+    </body>
+
+</html>

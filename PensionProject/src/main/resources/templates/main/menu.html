@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/main/menu.css">
+<title>메뉴</title>
+</head>
+<body>
+	<div class="main-container">
+		<th:block th:if="${name} == null" th:include="/fragments/header.html"></th:block>
+		<th:block th:if="${name} != null" th:include="/fragments/header2.html"></th:block>
+		<div class="container">
+            <ul class="kor-pc">
+                <li class="kor-nav">
+                    <ul class="kor-list">
+                        <li class="spring">
+                            <a href="/spring">봄</a>
+                        </li>
+                        <li class="summer">
+                            <a href="/summer">여름</a>
+                        </li>
+                        <li class="fall">
+                            <a href="/autumn">가을</a>
+                        </li>
+                        <li class="winter">
+                            <a href="/winter">겨울</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>    
+                <div class="content-box">    
+                    <div class="kor-list-sub">
+                        <div class="content1">
+                            <li class="big" style="background-image: url('/img/main/main_caravan.png');background-position: 20px; background-size: 100%;">
+                                <p><a href="">코리아 카라반</a></p>
+                            </li>
+                            <li class="big" style="background-image: url('/img/main/main_pension.png'); background-position: cneter center; background-size: cover;">
+                                <p><a href="">코리아 펜션</a></p>
+                            </li>
+                        </div>
+                        <div class="content2">    
+                            <li class="">
+                                <a href="/guide">오시는 길</a>
+                            </li>
+                            <li class="">
+                                <a href="/facility_information">시설안내</a>
+                            </li>
+                        </div>
+                        <div class="content3">    
+                            <li class="">
+                                <a href="">예약 안내</a>
+                            </li>
+                            <li class="">
+                                <a href="">실시간 예약</a>
+                            </li>
+                        </div>
+                        <div class="content4">    
+                            <li class="big" style="background-image: url('/img/main/main_bbq.png');background-position: center; background-size: 100%;">
+                                <p>BBQ</p>
+                            </li>
+                            <li class="big" style="background-image: url('/img/main/main_glamping.png'); background-position: center center; background-size: cover;">
+                                <p><a href="">코리아 글램핑</a></p>
+                            </li>
+                        </div>    
+                    </div>
+                </div>   
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-snap-type: y mandatory;
+    
+}
+/* 스크롤바 숨기기 */
+*::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.scroll{
+    scroll-snap-align: center;
+}
+/* 헤더 */
+
+#header{
+    width: 200px;
+    margin: 0px auto;
+}
+.header1{
+    position: fixed;
+}
+
+.header_logo img{
+    width: 150px;
+    height: 100%;
+}
+.threeLineImg{
+    position: relative;
+    top: 40px;
+    left: 900px;
+
+}
+.threeLineImg > div{
+    position: fixed;
+}
+.threeLineImg img{
+    width: 40px;
+}
+/* 이미지 */
+/* .pension_main{
+    width: 100%;
+    height: 847px;
+} */
+.pension_main img{
+    width: 100%;
+    height: 1080px;
+}
+/* .pension_interior1{
+    width: 100%;
+    height:783px;
+} */
+.pension_interior1 img{
+    width: 100%;
+    height: 1080px;
+}
+/* .pension_interior2{
+    width: 100%;
+    height:1050px;
+} */
+.pension_interior2 img{
+    width: 100%;
+    height: 1080px;
+}
+/* .pension_interior3{
+    width: 100%;
+    height:807px;
+} */
+.pension_interior3 img{
+    width: 100%;
+    height: 1080px;
+}
+/* .pension_interior4{
+    width: 100%;
+    height:783px;
+} */
+.pension_interior4 img{
+    width: 100%;
+    height: 1080px;
+}
+/* .pension_interior5{
+    width: 100%;
+    height:783px;
+} */
+.pension_interior5 img{
+    width: 100%;
+    height: 1080px;
+}
+
+.pension_text{
+    text-align: center;
+    position: relative;
+    bottom: 680px;
+}
+.pension_text h2{
+    color: white;
+    font-size: 50px;
+}
+.pension_text p{
+    margin: 0 auto;
+    width: fit-content;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(109, 191, 245, 0.945);
+}
+.pension_text1{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.pension_text1 div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+}
+
+.pension_text1 h2{
+    color: white;
+    font-size: 30px;
+
+}
+.pension_text1 p{
+    color: #ffcc99;
+    font-size: 18px;
+
+}
+.pension_text2{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.pension_text2 div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+}
+
+.pension_text2 h2{
+    color: white;
+    font-size: 30px;
+
+}
+.pension_text2 p{
+    color: #ffcc99;
+    font-size: 18px;
+
+}
+.pension_text3{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.pension_text3 div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+}
+
+.pension_text3 h2{
+    color: white;
+    font-size: 30px;
+
+}
+.pension_text3 p{
+    color: #ffcc99;
+    font-size: 18px;
+
+}
+.pension_text4{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.pension_text4 div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+}
+
+.pension_text4 h2{
+    color: white;
+    font-size: 30px;
+
+}
+.pension_text4 p{
+    color: #ffcc99;
+    font-size: 18px;
+
+}
+.pension_text5{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.pension_text5 div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+}
+
+.pension_text5 h2{
+    color: white;
+    font-size: 30px;
+
+}
+.pension_text5 p{
+    color: #ffcc99;
+    font-size: 18px;
+
+}
+
+/* footer */
+
+footer{
+    margin-top: -158px;
+    width: 1920px;
+    height: 500px;
+    background-color: #2b2b2b;
+    scroll-snap-align: center;
+}
+footer h2 img{
+    width: 100px;
+}
+footer > ul{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 265px;
+    /* border: 1px solid black; */
+    list-style-type: none;
+    text-decoration: none;
+}
+footer > ul > li{
+    margin: 100px 70px 0px 70px;
+    float: left;
+
+}
+.center,
+.right{
+    padding-top: 50px;
+}
+.center ul,
+.right ul {
+    list-style-type: none;
+
+}
+.left p{
+    color: white;
+    margin-top: 10px;
+}
+.left > div{
+    padding-top: 10px;
+}
+.center ul a,
+.right ul a{
+    text-decoration: none;
+    color: white;
+}
+.center ul li,
+.right ul li{
+    padding-top: 10px;
+}
+.center > ul{
+    float: left;
+    margin: 0px 80px;
+}
+.right1{
+    background: url('/img/main/main_pension.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    float: left;
+}
+.right2{
+    background: url('/img/main/main_glamping.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    left: 170px;
+}
+
+.right3{
+    background: url('/img/main/main_caravan.png') no-repeat;
+    width: 150px;
+    min-height: 100px;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 20px;
+}
+.right1 a{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-weight: bold;
+}
+.right3 a{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font-weight: bold;
+}
+.right2 a{
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+    font-weight: bold;  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-snap-type: y mandatory;
+    
+}
+/* 스크롤바 숨기기 */
+*::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.scroll{
+    scroll-snap-align: center;
+}
+/* 헤더 */
+
+#header{
+    width: 200px;
+    margin: 0px auto;
+}
+.header1{
+    position: fixed;
+}
+
+.header_logo img{
+    width: 150px;
+    height: 100%;
+}
+.threeLineImg{
+    position: relative;
+    top: 40px;
+    left: 900px;
+
+}
+.threeLineImg > div{
+    position: fixed;
+}
+.threeLineImg img{
+    width: 40px;
+}
+.come_container{
+    width: 1920px;
+}
+.come1{
+    width: 100%;
+    height: 920px;
+    background: url('/img/guide/guide_come.png') no-repeat;
+    box-sizing: border-box;
+}
+.come1 > .service1{
+    padding-top: 50px;
+    padding-right: 20px;
+}
+.service1{
+    margin: 0px auto;
+    width: 350px;
+    height: 100px;
+    position: relative;
+    top: 400px;
+}
+.service1 > h2{
+    font-size: 24px;
+    color: white;
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+.service1 > p{
+    color: white;
+    font-size: 20px;
+    margin-left: 80px;
+}
+.come2{
+    width: 100%;
+    height: 920px;
+    background: url('/img/guide/guide_nav.png') no-repeat;
+    box-sizing: border-box;
+    color: white;
+}
+.service2{
+    margin: 0px auto;
+    width: 700px;
+    height: 100px;
+    position: relative;
+    top: 400px;
+    right: 300px;
+}
+.service2 > h2{
+    font-size: 24px;
+    color: white;
+    margin-left: 130px;
+}
+.service2 > h4{
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.service2 > p{
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.come3{
+    width: 100%;
+    height: 920px;
+    background: url('/img/guide/guide_bus.png') no-repeat;
+    box-sizing: border-box;
+    color: white;
+}
+.service3{
+    margin: 0px auto;
+    width: 700px;
+    height: 100px;
+    position: relative;
+    top: 400px;
+    right: 350px;
+}
+.service3 > h2{
+    font-size: 24px;
+    color: white;
+    margin-left: 130px;
+}
+.service3 > h4 {
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.service3 > p {
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.come4{
+    width: 100%;
+    height: 920px;
+    background: url('/img/guide/guide_train.png') no-repeat;
+    box-sizing: border-box;
+    color: white;
+}
+.service4{
+    margin: 0px auto;
+    width: 700px;
+    height: 100px;
+    position: relative;
+    top: 400px;
+    right: 300px;
+}
+.service4 > h4 {
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.service4 > p {
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.service4 > h2{
+    font-size: 24px;
+    color: white;
+    margin-left: 130px;
+}
+
+
+
+/* footer */
+footer{
+    width: 1920px;
+    height: 500px;
+    background-color: #2b2b2b;
+    scroll-snap-align: center;
+}
+footer h2 img{
+    width: 100px;
+}
+footer > ul{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 265px;
+    /* border: 1px solid black; */
+    list-style-type: none;
+    text-decoration: none;
+}
+footer > ul > li{
+    margin: 100px 70px 0px 70px;
+    float: left;
+
+}
+.center,
+.right{
+    padding-top: 50px;
+}
+.center ul,
+.right ul {
+    list-style-type: none;
+
+}
+.left p{
+    color: white;
+    margin-top: 10px;
+}
+.left > div{
+    padding-top: 10px;
+}
+.center ul a,
+.right ul a{
+    text-decoration: none;
+    color: white;
+}
+.center ul li,
+.right ul li{
+    padding-top: 10px;
+}
+.center > ul{
+    float: left;
+    margin: 0px 80px;
+}
+.right1{
+    background: url('/img/main/main_pension.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    float: left;
+}
+.right2{
+    background: url('/img/main/main_glamping.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    left: 170px;
+}
+
+.right3{
+    background: url('/img/main/main_caravan.png') no-repeat;
+    width: 150px;
+    min-height: 100px;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 20px;
+}
+.right1 a{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-weight: bold;
+}
+.right3 a{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font-weight: bold;
+}
+.right2 a{
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+    font-weight: bold;  
+
+}

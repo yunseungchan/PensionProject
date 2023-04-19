@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="/css/board/notice.css">
+    <script src="/lib/jquery-3.6.3.min.js"></script>
+
+</head>
+<body>
+    <div class="main-container">
+        <th:block th:include="/fragments/header2.html"></th:block>
+        <section>
+            <div class="notice_container">
+                    <input type="text" placeholder="검색어를 입력해주세요" class="search">
+                    <button type="button" class="search_btn">검색</button>
+                    <div class="box">
+                        <a href="/noticeWrite"><button>글쓰기</button></a>
+                    </div>  
+                <table>
+                    <tr>
+                        <th>번호</th>
+                        <th>이름</th>
+                        <th>제목</th>
+                        <th>날짜</th>
+                        <th>조회수</th>
+                    </tr>
+                    <tr th:each="notice : ${list}">
+                        <td>[[${notice.NOTICE_NO}]]</td>
+                        <td>[[${notice.MANAGER_ID}]]</td>
+                        <td><a th:href="@{/notice/noticeContent/{NoticeNo}(NoticeNo=${notice.NOTICE_NO})}">[[${notice.TITLE}]]</a></td>
+                        <td>[[${notice.WRITE_DATE}]]</td>
+                        <td>[[${notice.NOTICE_COUNT}]]</td>
+                    </tr>
+                </table>
+	               <div class="page_move_container">
+					<a th:if="${pagging.priviousPageGroup }" th:href="@{/notice(pageNo=${pagging.startPageOfPageGroup -1}, search=${search})}">◀</a>
+							
+					<th:block th:each = "i : ${#numbers.sequence(pagging.startPageOfPageGroup,pagging.endPageOfPageGroup)}">
+					<span th:if="${i == pagging.currentPageNo }" class="current_page" th:text="${i}"></span>
+					<a th:if="${i != pagging.currentPageNo }" th:href="@{/notice(pageNo=${i}, search=${search})}" th:text="${i}"></a>
+					</th:block>
+							
+					<a th:if="${pagging.nextPageGroup }" th:href="@{/notice(pageNo=${pagging.endPageOfPageGroup + 1}, search=${search})}">▶</a>
+				</div>
+        </section>
+        <th:block th:include="/fragments/footer.html"></th:block>
+    </div>    
+</body>
+</html>

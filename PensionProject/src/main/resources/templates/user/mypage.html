@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>마이페이지</title>
+<link rel="stylesheet" href="/css/user/mypage.css">
+<script src="/lib/jquery-3.6.3.js"></script>
+<script>
+        // 예약 취소 버튼 클릭 이벤트
+        document.querySelectorAll(".cancelBtn").forEach(function (btn) {
+            btn.addEventListener("click", function (event) {
+                if (confirm("정말로 예약을 취소하시겠습니까?")) {
+                    // 예약 취소 코드
+                    event.target.closest("tr").remove();
+                    // 예약 취소 알림 메시지
+                    alert("예약이 취소되었습니다.");
+                }
+            });
+        }); 
+    </script>
+</head>
+
+<body>
+	<div class="main_container">
+		<th:block th:include="/fragments/header2.html"></th:block>
+		<section>
+			<div class="mypage_container">
+				<div class="wrapper">
+					<h1>마이페이지</h1>
+					<div class="info">
+						<p>이름: [[${session.dto.name}]]</p>
+						<p>이메일: [[${session.dto.email}]]</p>
+						<p>전화번호: [[${session.dto.tel}]]</p>
+					</div>
+					<table class="reservations">
+						<caption>내 예약 정보</caption>
+						<thead>
+							<tr>
+								<th>예약 번호</th>
+								<th>체크 인</th>
+								<th>체크 아웃</th>
+								<th>room type</th>
+								<th>예약 인원</th>
+								<th>예약 취소</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="booking">
+								<td>[[${session.dto.bookingNo}]]</td>
+								<td>[[${session.dto.checkIn}]]</td>
+								<td>[[${session.dto.checkOut}]]</td>
+								<td>[[${session.dto.roomType}]]</td>
+								<td>[[${session.dto.numGuest}]]</td>
+								<td><button class="cancelBtn">취소</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<th:block th:include="/fragments/footer.html"></th:block>
+	</div>
+
+</body>
+
+</html>

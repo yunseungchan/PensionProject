@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>숙소 예약 페이지</title>
+<link rel="stylesheet" href="/css/reservation/reservation.css">
+<script src="../lib/jquery-3.6.3.js"></script>
+<script src="../javaScript/reservation.js"></script>
+</head>
+
+<body>
+	<th:block th:include="/fragments/header2.html"></th:block>
+	<h1>숙소 예약</h1>
+	<form>
+		<fieldset>
+			<legend>숙박 정보</legend>
+			<br> <label for="check-in">체크인 날짜</label> <input type="date"
+				id="check-in" name="check-in" required /><br> <label
+				for="check-out">체크아웃 날짜</label> <input type="date" id="check-out"
+				name="check-out" required /><br> <label for="guest-name">이름</label>
+			<input type="text" id="guest-name" name="guest-name" required /><br>
+
+			<label for="guest-email">이메일</label> <input type="text"
+				id="guest-email" name="guest-email" required /><br> <label
+				for="guest-phone">전화번호</label> <input type="tel" id="guest-phone"
+				name="guest-phone" required /><br>
+
+			<div class="accommodation-type">
+				<legend>숙소 종류</legend>
+
+				<label> <input type="radio" id="pension"
+					name="accommodation-type" value="pension" required /> <img
+					src="/img/main/main_pension.png" alt="펜션" /> <span>펜션</span> <span>150,000</span>
+				</label> <label> <input type="radio" id="caravan"
+					name="accommodation-type" value="caravan" required /> <img
+					src="/img/main/main_caravan.png" alt="카라반" /> <span>카라반</span> <span>150,000</span>
+				</label> <label> <input type="radio" id="glamping"
+					name="accommodation-type" value="glamping" required /> <img
+					src="/img/main/main_glamping.png" alt="글램핑" /> <span>글램핑</span> <span>150,000</span>
+				</label>
+			</div>
+
+			<button type="submit">예약하기</button>
+		</fieldset>
+	</form>
+	<th:block th:include="/fragments/footer.html"></th:block>
+</body>
+
+</html>

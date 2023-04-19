@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pension.mapper.BookingMapper">
+<resultMap type="kor_booking" id="booking">
+		<id column="BOOKING_NO" property="bookingNo" />
+		<result column="ID" property="id" />
+		<result column="TEL" property="tel" />
+		<result column="CHECK_IN" property="checkIn" />
+		<result column="CHECK_OUT" property="checkOut" />
+		<result column="ROOM_TYPE" property="roomType" />
+		<result column="NUM_GUEST" property="numGuest" />
+		<result column="COST" property="cost" />
+		<result column="BOOKING_DATE" property="bookingDate" />
+		<result column="EMAIL" property="email" />
+	</resultMap>
+	
+</mapper>

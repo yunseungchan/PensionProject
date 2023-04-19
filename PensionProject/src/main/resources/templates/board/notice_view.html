@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/board/notice_view.css">
+    <title>게시판 view</title>
+</head>
+<body>
+    <div class="main_container">
+        <th:block th:include="/fragments/header2.html"></th:block>
+        <section>
+            <div class="view_container">
+                <div class="content_header">
+                    <div class="content_box1"><p>제목</p></div>
+                    <div class="content_box2"><p>[[${notice.noticeTitle}]]</p></div>
+                    <div class="content_box4"><p>작성일자 : [[${notice.noticeDate}]]</p></div>
+                </div>
+                <div class="content_main">
+                    <p>[[${notice.noticeContent}]]</p>
+                </div>
+                <div class="content_footer">
+                    <div class="c_f_name1"><p>작성자</p></div>
+                    <div class="c_f_name2"><p>[[${notice.noticeWriter}]]</p></div>
+                    <div class="c_f_hits1"><p>조회수</p></div>
+                    <div class="c_f_hits2"><p>[[${notice.noticeCount}]]</p></div>
+                </div>
+            </div>
+        </section>
+        <th:block th:include="/fragments/footer.html"></th:block>
+    </div>    
+</body>
+</html>

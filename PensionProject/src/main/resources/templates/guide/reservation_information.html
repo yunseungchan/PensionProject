@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>예약안내</title>
+<link rel="stylesheet" href="/css/guide/reservation_information.css">
+<body>
+	<th:block th:include="/fragments/mainheader.html"></th:block>	
+
+	<div class="scroll">
+		<div class="reservation">
+			<img src="/img/reservation_information/reservation.png" alt="">
+		</div>
+	</div>
+	<div class="reservation_text">
+		<h3>예약방법</h3>
+		<p>
+			1.원하시는 숙박날짜와 객실번호를 정한 뒤 ‘실시간 예약’을 눌러 빈 객실을 예약 하시면 문자메세지로 계좌번호와 이용요금을
+			보내드립니다.<br> 전화예약(111-1111-1111) 신청도 가능합니다.
+		</p>
+		<br>
+		<p>
+			2.예약신청 뒤 24시간 내로 객실요금을 전액 또는 50%이상 입금하시면 예약이 확정되며, 확정문자메세지를 보내드립니다.<br>
+			잔액은 현장에서 결제바랍니다.
+		</p>
+		<br>
+		<p>3.예약신청 뒤 24시간내 입금(객실요금 50% 이상)하지 않으시면 자동으로 취소됩니다.</p>
+		<h5>*숙박 당일과 전날 예약시에는 신청 뒤 2시간 내 입금하지 않으시면 자동으로 취소됩니다.</h5>
+		<h5>*예약자 명의로 입금하지 않으실 경우 전화(111-1111-1111)로 통보해주시기 바랍니다.</h5>
+		<br>
+		<p>
+			4.예약확정(객실료 입금) 뒤 취소할 경우 10% 이상의 위약금이 부과되고 나머지 금액만 환불해 드립니다.<br>
+			아래 ‘이용안내와 환불규정’을 반드시 읽어주시고 신중한 예약을 부탁드립니다.
+		</p>
+		<br>
+		<p>5.예약한 날짜(숙박예정일)을 변경한 경우 예약 취소에 준하는 위약금이 부과됩니다.</p>
+	</div>
+
+
+	<div class="scroll">
+		<div class="check-in">
+			<img src="/img/reservation_information/Check-in.Check-out.png" alt="">
+		</div>
+	</div>
+
+	<div class="check_text">
+		<h3>Check-in / Check-out</h3>
+		<p>
+			*입실: <br> 예약일 오후 3시 ~ 밤 10시
+		</p>
+		<br>
+		<p>
+			*퇴실: <br> 익일 오전 11시
+		</p>
+		<h5>(퇴실하실 때는 반드시 열쇠를 체크인센터에 반납해주시기 바랍니다.)</h5>
+		<p>*오후 3시 이전 입실을 원하시면 빠른 준비를 위해 사전에 연락주세요.</p>
+		<h5>(협의후 오후1시이후 가능)</h5>
+
+		<br>
+		<h3>Information</h3>
+		<p>* 체크인 센터에 간이매점 있습니다.( 소주, 맥주, 스낵류, 음료, 라면, 햇반)</p>
+		<p>*건물 내 흡연은 금지돼 있습니다. 흡연은 바비큐실과 노천탕에서 부탁드립니다.</p>
+		<p>*애완동물은 출입할 수 없습니다.</p>
+		<P>*상업적인 촬영을 원하시는 분은 사전 협의 후 예약이 가능합니다.</P>
+
+		<br>
+		<p>주요시설</p>
+		<br>
+		<p>*현무암노천탕, 2인용 대형욕조(거품욕 전용), 샤워실(화장실), 바비큐그릴, 냉장고(생수 무료 제공)</p>
+		<br>
+		<P>구비시설</P>
+		<br>
+		<p>① 싱크대 : 쿡탑(전기렌지), 전자렌지, 커피잔, 와인잔, 소주잔, 물컵, 전기밥솥, 전기포트, 주방세제,
+			와인오프너, 수저, 밥주걱, 국자, 뒤집개, 가위, 집게, 식도, 도마, 과도, 키친타올, 쿠킹호일, 크랜백, 고무장갑,
+			위생비닐봉투, 냄비, 후라이팬, 소쿠리</p>
+		<p>② 샤워실·욕실:바스가운, 수건, 헤어드라이어, 비누, 샴푸, 린스, 바디클렌저, 치약(칫솔, 면도기는
+			유료·카운터)</p>
+	</div>
+
+
+
+
+	<div class="scroll">
+		<div class="refund">
+			<img src="/img/reservation_information/refund.png" alt="">
+		</div>
+	</div>
+	<div class="refund_text">
+		<h3>Refund</h3>
+
+		<!-- <div class="refund_table"> -->
+		<table>
+			<tr>
+				<td>기준</td>
+				<td>취소 수수료 (%)</td>
+				<td>환불액 (%)</td>
+			</tr>
+
+			<tr>
+				<td>이용일 9일전</td>
+				<td>10%</td>
+				<td>90%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 8일전</td>
+				<td>20%</td>
+				<td>80%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 7일전</td>
+				<td>30%</td>
+				<td>70%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 6일전</td>
+				<td>40%</td>
+				<td>60%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 5일전</td>
+				<td>50%</td>
+				<td>50%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 4일전</td>
+				<td>60%</td>
+				<td>40%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 3일전</td>
+				<td>70%</td>
+				<td>30%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 2일전</td>
+				<td>80%</td>
+				<td>20%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 1일전</td>
+				<td>90%</td>
+				<td>10%</td>
+			</tr>
+
+			<tr>
+				<td>이용일 당일</td>
+				<td>100%</td>
+				<td>0%</td>
+			</tr>
+		</table>
+	</div>
+
+	</div>
+
+
+
+
+	<div class="scroll">
+		<div class="lake">
+			<img src="/img/reservation_information/lake.png" alt="">
+		</div>
+	</div>
+	<div class="lake_text">
+		<h3>Korea Lake</h3>
+		<br>
+		<p>
+			<strong>운영시간 : 오전 9시~오후 9시 / 수심 : 0.4m~1m초대형 풀장 / 복장 : 자율</strong>
+		</p>
+		<br>
+		<p>
+			드위트리 호수는 100% 천연계곡수로 도롱뇽, 산벌레가 간혹 보일 수 있습니다.<br> 온수수영장은 아니지만
+			5월부터는 낮시간대 수영이 가능하도록 철저히 관리하고 있습니다.<br> 6월 중순까지는 수영 하실때는 물이 차가울
+			수 있지만, 물놀이 후 실내의 버블 스파와 실외의 개별 노천탕 스파를 활용하시기 바랍니다.<br> (튜브 바람넣는
+			기계 사용 가능)
+		</p>
+		<br>
+		<p>
+			<strong>로맨틱카누와 페달보트 이용기간 : 3월 중순 ~ 7월 중순, 8월 중순 ~ 11월 말</strong>
+		</p>
+		<br>
+		<p>
+			5월~6월 초엔 간혹 소나무에서 날아온 노란 송화가루가 떠있으나 식용으로도 쓰는 가루로 전혀 해롭지 않습니다.<br>
+			고성능 여과기로 수질은 늘 최고상태를 유지하고 있으니 안심하고 이용하시기 바랍니다.
+		</p>
+	</div>
+
+
+	<div class="scroll">
+		<th:block th:include="/fragments/footer.html"></th:block>
+	</div>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

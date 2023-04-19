@@ -1,0 +1,86 @@
+<header id="header">
+    <div class="header1">
+        <a href="/" class="header_logo">
+            <img src="/img/source/logo.png" alt="로고">
+        </a>
+    </div>
+    <div class="threeLineImg">
+        <div>
+            <a href="/">
+                <img src="/img/source/iconX.png" alt="메뉴">
+            </a>
+        </div>
+    </div>
+    <div class="login_box">
+        <div>
+            <input th:value=${session.dto.name} readonly>
+        </div>
+        <div>
+            <a href="/mypage">마이페이지</a>
+        </div>
+        <div>
+            <a href="">로그아웃</a>
+        </div>
+    </div>
+</header>
+
+<style>
+    #header{
+    width: 200px;
+    margin: 0px auto;
+}
+/* .header1{
+    position: fixed;
+} */
+
+.header_logo img{
+    width: 150px;
+    height: 100%;
+}
+.threeLineImg{
+    position: relative;
+    top: 40px;
+    left: 800px;
+
+}
+/* .threeLineImg > div{
+    position: fixed;
+} */
+.threeLineImg img{
+    width: 40px;
+}
+.kor-pc{
+    width: 1200px;
+    margin:  0 auto;
+}
+#header .container{
+    padding: 0 20px;
+}
+.login_box{
+    width: 100px;
+    height: 50px;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-left: 420px;
+}
+.login_box > a{
+    text-decoration: none;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+.kor-pc{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+</style>

@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-snap-type: y mandatory;
+}
+/* 스크롤바 숨기기 */
+*::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.scroll{
+    scroll-snap-align: center;
+}
+
+/* 헤더 */
+#header{
+    width: 200px;
+    margin: 0px auto;
+}
+.header1{
+    position: fixed;
+}
+
+.header_logo img{
+    width: 150px;
+    height: 100%;
+}
+.threeLineImg{
+    position: relative;
+    top: 40px;
+    left: 900px;
+
+}
+.threeLineImg > div{
+    position: fixed;
+}
+.threeLineImg img{
+    width: 40px;
+}
+
+
+/* 이미지 */
+/* .guide{
+    width: 100%;
+    height: 920px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
+.guide img{
+    width: 100%;
+    height: 1080px;
+}
+/* .guide1{
+    width: 100%;
+    height: 780px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
+.guide1 img{
+    width: 100%;
+    height: 1080px;
+}
+/* .map-guide{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
+.map-guide img{
+    width: 100%;
+    height: 1080px;
+}
+/* .canoe-guide{
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+} */
+.canoe-guide img{
+    width: 100%;
+    height: 1080px;
+}
+/* .pedal_boat-guide{
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;;
+ 
+} */
+.pedal_boat-guide img{
+    width: 100%;
+    height: 1080px;
+
+}
+/* .caravan-guide{
+    width: 100%;
+    height: 920px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  
+} */
+.caravan-guide img{ 
+    width: 100%;
+    height: 1080px;
+}
+/* .glamping-guide{
+    width: 100%;
+    height: 920px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+} */
+.glamping-guide img{
+    width: 100%;
+    height: 1080px;
+}
+/* .cafe-guide{
+    width: 100%;
+    height: 780px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
+.cafe-guide img{
+    width: 100%;
+    height: 1080px;
+}
+/* .cafe-guide2{
+    width: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+} */
+.cafe-guide2 img{
+    width: 100%;
+    height: 1080px;
+}
+
+/* .leisure_sports-guide{
+    width: 100%;
+    height: 920px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+} */
+.leisure_sports-guide img{
+    width: 100%;
+    height: 1080px;
+}
+/* .leisure_sports-guide2{
+    width: 100%;
+    height: 920px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+} */
+.leisure_sports-guide2 img{
+    width: 100%;
+    height: 1080px;
+}
+
+/* 텍스트 */
+.text-guide{
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 680px;
+} 
+.text-guide h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.text-guide p{
+    font-size: 16px;
+     color:white; 
+    text-align: center;
+}
+.pension-text{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.pension-text div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 340px;
+}
+.pension-text h3{
+    color: white;
+    font-size: 30px;
+
+}
+.pension-text p{
+    color:white;
+    font-size: 16px;
+}
+
+.canoe-text{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.canoe-text div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 340px;
+}
+.canoe-text h3{
+    color: white;
+    font-size: 30px;
+
+}
+.canoe-text p{
+    color:white;
+    font-size: 16px;
+}
+
+.pedal-text{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.pedal-text div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 340px;
+}
+.pedal-text h3{
+    color: white;
+    font-size: 30px;
+
+}
+.pedal-text p{
+    color:white;
+    font-size: 16px;
+}
+
+.caravan-text{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.caravan-text div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 340px;
+}
+.caravan-text h3{
+    color: white;
+    font-size: 30px;
+
+}
+.caravan-text p{
+    color:white;
+    font-size: 16px;
+}
+
+.glamping-text{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.glamping-text div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 340px;
+}
+.glamping-text h3{
+    color: white;
+    font-size: 30px;
+
+}
+.glamping-text p{
+    color:white;
+    font-size: 16px;
+}
+
+.cafe-text{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.cafe-text div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 340px;
+}
+.cafe-text h3{
+    color: white;
+    font-size: 30px;
+
+}
+.cafe-text p{
+    color:white;
+    font-size: 16px;
+}
+
+.cafe-text2{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.cafe-text2 div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 340px;
+}
+.cafe-text2 h3{
+    color: white;
+    font-size: 30px;
+
+}
+.cafe-text2 p{
+    color:white;
+    font-size: 16px;
+}
+
+.leisure_sports-text{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.leisure_sports-text div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 375px;
+}
+.leisure_sports-text h3{
+    color: white;
+    font-size: 30px;
+
+}
+.leisure_sports-text p{
+    color:white;
+    font-size: 16px;
+}
+
+.leisure_sports-text2{
+    position: relative;
+    bottom: 270px;
+    left: 40px;
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid white;
+}
+.leisure_sports-text2 div{
+    background: rgba(0,0,0,.4);
+    padding: 30px 15px ;
+    width: 380px;
+}
+.leisure_sports-text2 h3{
+    color: white;
+    font-size: 30px;
+
+}
+.leisure_sports-text2 p{
+    color:white;
+    font-size: 16px;
+}
+
+
+/* 풋터 */
+footer{
+    margin-top: -176px;
+    width: 1920px;
+    height: 500px;
+    background-color: #2b2b2b;
+}
+footer h2 img{
+    width: 100px;
+}
+footer > ul{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 265px;
+    /* border: 1px solid black; */
+    list-style-type: none;
+    text-decoration: none;
+}
+footer > ul > li{
+    margin: 100px 70px 0px 70px;
+    float: left;
+
+}
+.center,
+.right{
+    padding-top: 50px;
+}
+.center ul,
+.right ul {
+    list-style-type: none;
+
+}
+.left p{
+    color: white;
+    margin-top: 10px;
+}
+.left > div{
+    padding-top: 10px;
+}
+.center ul a,
+.right ul a{
+    text-decoration: none;
+    color: white;
+}
+.center ul li,
+.right ul li{
+    padding-top: 10px;
+}
+.center > ul{
+    float: left;
+    margin: 0px 80px;
+}
+.right1{
+    background: url('/img/main/main_pension.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    float: left;
+}
+.right2{
+    background: url('/img/main/main_glamping.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    left: 170px;
+}
+
+.right3{
+    background: url('/img/main/main_caravan.png') no-repeat;
+    width: 150px;
+    min-height: 100px;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 20px;
+}
+.right1 a{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-weight: bold;
+}
+.right3 a{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font-weight: bold;
+}
+.right2 a{
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+    font-weight: bold;  
+
+}
+
+
+
+
+
+

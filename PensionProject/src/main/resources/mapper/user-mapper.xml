@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 2.3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pension.mapper.UserMapper">
+	<resultMap type="kor_userInfo" id="user">
+		<id column="ID" property="id" />
+		<result column="PASS" property="pass" />
+		<result column="NAME" property="name" />
+		<result column="GENDER" property="gender" />
+		<result column="TEL" property="tel" />
+		<result column="EMAIL" property="email" />
+	</resultMap>
+
+	<select id="login" parameterType="hashmap" resultMap="user">
+		select * from kor_userInfo where id like #{id} and pass like #{pass}
+	</select>
+
+	<insert id="insertMemberInfo" parameterType="kor_userInfo">
+		insert into kor_userInfo(ID, PASS, NAME, EMAIL, TEL)
+		values(#{id},#{pass},#{name},#{email},#{tel})
+	</insert>
+
+
+</mapper>
